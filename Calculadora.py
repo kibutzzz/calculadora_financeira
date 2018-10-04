@@ -42,3 +42,42 @@ class Calculadora:
     def __calcula_periodos_simples(self, juros, valor_inicial, taxa_de_juros):
         return juros / (valor_inicial * taxa_de_juros)
 
+    def calcula_juros_compostos(self, montante=None, valor_inicial=None, taxa_de_juros=None,
+                                peridos=None):
+        opcao = 0
+        parametros_nulos = 0
+        if montante is None:
+            parametros_nulos += 1
+        if valor_inicial is None:
+            parametros_nulos += 1
+            opcao = 1
+        if taxa_de_juros is None:
+            parametros_nulos += 1
+            opcao = 2
+        if peridos is None:
+            parametros_nulos += 1
+            opcao = 3
+
+        if parametros_nulos > 1:
+            return None
+
+        if opcao == 0:
+            return self.__calcula_montante_composto(valor_inicial, taxa_de_juros, peridos)
+        if opcao == 1:
+            return self.__calcula_valor_inicial_composto(montante, taxa_de_juros, peridos)
+        if opcao == 2:
+            return self.__calcula_taxa_de_juros_composto(montante, valor_inicial, peridos)
+        if opcao == 3:
+            return self.__calcula_periodos_composto(montante, valor_inicial, taxa_de_juros)
+
+    def __calcula_montante_composto(valor_inicial, taxa_de_juros, peridos):
+        return
+
+    def __calcula_valor_inicial_composto(montante, taxa_de_juros, peridos):
+        return
+
+    def __calcula_taxa_de_juros_composto(montante, valor_inicial, peridos):
+        return
+
+    def __calcula_periodos_composto(montante, valor_inicial, taxa_de_juros):
+        return
