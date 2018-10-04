@@ -9,5 +9,5 @@ print(calc.calcular_juros_simples(juros=300, valor_inicial=1000, taxa_de_juros=0
 
 print(calc.calcula_juros_compostos(valor_inicial=1000, taxa_de_juros=0.05, periodos=3))
 print(calc.calcula_juros_compostos(montante=1157.63, taxa_de_juros=0.05, periodos=3))
-
+print(calc.calcula_juros_compostos(valor_inicial=1000, montante=1157.63, periodos=3))
 
