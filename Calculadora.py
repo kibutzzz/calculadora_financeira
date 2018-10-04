@@ -70,14 +70,14 @@ class Calculadora:
         if opcao == 3:
             return self.__calcula_periodos_composto(montante, valor_inicial, taxa_de_juros)
 
-    def __calcula_montante_composto(valor_inicial, taxa_de_juros, periodos):
+    def __calcula_montante_composto(self, valor_inicial, taxa_de_juros, periodos):
         return
 
-    def __calcula_valor_inicial_composto(montante, taxa_de_juros, periodos):
+    def __calcula_valor_inicial_composto(self, montante, taxa_de_juros, periodos):
         return
 
-    def __calcula_taxa_de_juros_composto(montante, valor_inicial, periodos):
+    def __calcula_taxa_de_juros_composto(self, montante, valor_inicial, periodos):
         return
 
-    def __calcula_periodos_composto(montante, valor_inicial, taxa_de_juros):
+    def __calcula_periodos_composto(self, montante, valor_inicial, taxa_de_juros):
         return
