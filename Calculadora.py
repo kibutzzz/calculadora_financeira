@@ -81,4 +81,4 @@ class Calculadora:
         return math.pow((montante/valor_inicial), (1/periodos)) - 1
 
     def __calcula_periodos_composto(self, montante, valor_inicial, taxa_de_juros):
-        return
+        return math.log(montante/valor_inicial)/math.log(1+taxa_de_juros)
