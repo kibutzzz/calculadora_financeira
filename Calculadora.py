@@ -43,7 +43,7 @@ class Calculadora:
     def __calcula_periodos_simples(self, juros, valor_inicial, taxa_de_juros):
         return juros / (valor_inicial * taxa_de_juros)
 
-    def calcula_juros_compostos(self, montante=None, valor_inicial=None, taxa_de_juros=None,
+    def calcular_juros_compostos(self, montante=None, valor_inicial=None, taxa_de_juros=None,
                                 periodos=None):
         opcao = 0
         parametros_nulos = 0
